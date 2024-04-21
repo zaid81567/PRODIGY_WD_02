@@ -1,0 +1,58 @@
+.model-box-container {
+  color: white;
+
+  position: absolute;
+
+  z-index: 10;
+
+  /* border: 2px red solid; */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  backdrop-filter: blur(5px);
+  display: none;
+}
+
+.model-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.5rem;
+
+  background-color: rgb(26, 5, 5);
+  border: 2px white solid;
+  border-radius: 10px;
+  padding: 10px 10px;
+  width: 180px;
+}
+
+.git-icon {
+  font-size: 40px;
+  color: red;
+  cursor: pointer;
+}
+
+.creator {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /* font-weight: bold; */
+  color: rgb(169, 169, 169);
+}
+
+.cta {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: 3px solid red;
+  background-color: rgba(255, 0, 0, 0.371);
+  border-radius: 6px;
+  padding: 4px 40px;
+  /* width: 100%; */
+
+  cursor: pointer;
+}

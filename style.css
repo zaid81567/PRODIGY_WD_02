@@ -1,0 +1,145 @@
+@import url("./styles/font.css");
+@import url("./styles/icons.css");
+@import url("./styles/model-box.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  z-index: 0;
+}
+
+.container {
+  display: flex;
+  gap: 5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* display style  */
+
+.display {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 35px;
+
+  position: absolute;
+  top: 300px;
+  transition: top 300ms, font-size 300ms;
+}
+
+.move-up {
+  top: 80px;
+  font-size: 40px;
+}
+
+/* controls style  */
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  position: absolute;
+  bottom: 100px;
+}
+
+button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+/* lap-style  */
+
+.lap {
+  height: 50vh;
+  overflow-y: scroll;
+  color: rgb(166, 0, 255);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.show-lap {
+  opacity: 1;
+}
+
+.lap::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.lap p {
+  display: flex;
+  gap: 3rem;
+  font-size: 14px;
+
+  font-family: "Open Sans", sans-serif;
+}
+
+/* git icon btn  */
+
+.git-icon-btn {
+  color: rgb(166, 0, 255);
+  font-size: 30px;
+  position: absolute;
+
+  cursor: pointer;
+
+  top: 15px;
+  right: 15px;
+}
+
+/* ======MEDIA_QUEARY======================== */
+
+@media (min-width: 650px) {
+  .display {
+    font-size: 50px;
+    transition: top 300ms, font-size 300ms;
+  }
+
+  .move-up {
+    top: 80px;
+    font-size: 45px;
+  }
+
+  .git-icon-btn {
+    font-size: 35px;
+    top: 35px;
+    right: 35px;
+  }
+}
+
+@media (min-width: 850px) {
+  .display {
+    font-size: 55px;
+    transition: top 300ms, font-size 300ms;
+  }
+
+  .move-up {
+    top: 80px;
+    font-size: 50px;
+  }
+}
