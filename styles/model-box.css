@@ -16,7 +16,7 @@
   align-items: center;
 
   backdrop-filter: blur(5px);
-  display: inherit;
+  display: none;
 }
 
 .model-box {
