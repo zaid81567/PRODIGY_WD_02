@@ -118,6 +118,7 @@ button {
   .display {
     font-size: 50px;
     transition: top 300ms, font-size 300ms;
+    top: 250px;
   }
 
   .move-up {
